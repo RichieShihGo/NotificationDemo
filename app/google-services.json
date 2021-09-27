@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "106447706796",
+    "project_id": "notification-demo-baaa1",
+    "storage_bucket": "notification-demo-baaa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106447706796:android:6dce40cd6770a491595d09",
+        "android_client_info": {
+          "package_name": "com.magtonic.notificationdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106447706796-748o6pbrqakearjeq5ec9mrpv8bj2t7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magtonic.notificationdemo",
+            "certificate_hash": "a2a1418aa0461612dc55ef66d0d234f98d578d02"
+          }
+        },
+        {
+          "client_id": "106447706796-oguu8bkpl7vo59rli5n722rjeh8qjd55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATavYN5BReGnjMnwwdOqgO-C812pf80gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106447706796-oguu8bkpl7vo59rli5n722rjeh8qjd55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

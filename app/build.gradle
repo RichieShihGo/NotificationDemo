@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    //compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.magtonic.notificationdemo"
+        //minSdkVersion 23
+        //targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:$androidx_core_ktx_version"
+    implementation "androidx.appcompat:appcompat:$androidx_app_compat_version"
+    implementation "com.google.android.material:material:$androidx_material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$androidx_constraintlayout_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$androidx_navigation_fragment_ktx"
+    implementation "androidx.navigation:navigation-ui-ktx:$androidx_navigation_ui_ktx"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$androidx_lifecycle_livedata_ktx"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidx_lifecycle_livedata_ktx"
+    implementation "androidx.navigation:navigation-fragment-ktx:$androidx_lifecycle_viewmodel_ktx"
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    testImplementation "junit:junit:$junit_version"
+    //testImplementation 'junit:junit:4.+'
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso_core"
+
+    implementation platform("com.google.firebase:firebase-bom:$firebase_bom_version")
+
+    implementation 'com.google.firebase:firebase-database-ktx'
+    //implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-iid'
+}
